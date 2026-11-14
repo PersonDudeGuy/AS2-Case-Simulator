@@ -1,0 +1,83 @@
+#screen
+{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: grey;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+}
+
+#text
+{
+    position: absolute;
+    top: 60vh;
+    color: white;
+}
+
+.displayCase
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: clamp(25vh, 30vw, 40vw);
+    aspect-ratio: 1.5;
+    transform: translate(-50%, -50%);
+    background-color: green;
+    z-index: 5;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+}
+
+.displayImage
+{
+    height: 100%;
+}
+
+#caseContainer
+{
+    width: 100vw;
+    /*height: clamp(15vh, 15vw, 30vh);*/
+    height: 20vh;
+    background: white;
+    background: rgb(190, 95, 238);
+}
+
+.case
+{
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    background-color: green;
+    /*height: calc(clamp(15vh, 15vw, 30vh) - 6px);*/
+    height: calc(20vh - 6px);
+    border: 3.5px solid black;
+    aspect-ratio: 1.5;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+}
+
+.caseImage
+{
+    height: calc(20vh - 6px);
+}
+
+#marker
+{
+    position: absolute;
+    background-color: black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -120%);
+    height: 10vw;
+    width: 2vw;
+}
